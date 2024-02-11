@@ -2,12 +2,15 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: cornsilk;
+
 }
 h1{
     font-size: 300%;
     text-align: center;
 }
-
+p{
+    text-align: center;
+}
 ul.navbar {
     list-style-type: none;
     margin: 0;
@@ -36,26 +39,75 @@ ul.navbar a:hover{
     background-color: #1f293a;
 }
 
-img.portrait{
+img.portrait {
     border: 10px solid rgb(237, 225, 208);
     width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
 }
 
-h2.portrait{
+h2.portrait {
     font-size: 200%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: bisque;
     width: 60%;
     text-align: center;
+    margin: 10px auto; 
+}
+h3.portrait {
+    font-size: 200%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: bisque;
+    width: 60%;
+    text-align: center;
+    margin: 10px auto; 
+}
+h3.likes {
+    font-size: 200%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: bisque;
+    width: 60%;
+    text-align: center;
+    margin: 10px auto; 
 }
 
-.grid-container{
+ul.likes {
+    text-align: center;
+}
+
+.pets-grid {
     display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 40px;
+    row-gap: 10px;
+    padding: 0.9em;
+    justify-items: center; 
+}
+
+.pets-grid > img {
+    background-color: burlywood;
+    width: 100%; 
+    height: auto; 
+    padding: 1em;
+    align-items: center;
+}
+
+
+.item1 {
+    grid-column: span 1; 
+    grid-row: span 1;
+}
+.item2 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.item3 {
+    grid-column: span 2; 
+    grid-row: span 1;
+}
+
 
 }
 
-.miumiu_photos{
-    display: grid;
-    grid-template-columns: .5fr .5fr .5fr;
-}
-}
