@@ -1,5 +1,11 @@
+@media screen and (max-width: 680px) {
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: cornsilk;
+}
+h1{
+    font-size: 300%;
+    text-align: center;
 }
 
 ul.navbar {
@@ -28,4 +34,28 @@ a.active{
 
 ul.navbar a:hover{
     background-color: #1f293a;
+}
+
+img.portrait{
+    border: 10px solid rgb(237, 225, 208);
+    width: 60%;
+}
+
+h2.portrait{
+    font-size: 200%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: bisque;
+    width: 60%;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+
+}
+
+.miumiu_photos{
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr;
+}
 }
