@@ -120,5 +120,77 @@ ul.homepage{
     list-style-position: inside;
 }
 
+img.recipes {
+    border: 10px solid rgb(237, 225, 208);
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2.recipes {
+    font-size: 200%;
+    background-color: bisque;
+    width: 60%;
+    text-align: center;
+    margin: 10px auto; 
+}
+h3.recipes {
+    font-size: 175%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: bisque;
+    width: 60%;
+    text-align: center;
+    margin: 10px auto; 
+}
+ul.recipe_details {
+    text-align: center;
+    list-style-position: inside;
+}
+
+ul.recipe_steps {
+    text-align: center;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+ol.recipe_steps {
+    text-align: center;
+    list-style-type: lower-roman;
+    list-style-position: inside;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 40px;
+    row-gap: 10px;
+    padding: 0.9em;
+    justify-items: center; 
+}
+
+.recipes-grid > img {
+    background-color: burlywood;
+    width: 100%; 
+    height: auto; 
+    padding: 1em;
+    align-items: center;
+}
+
+
+.item4 {
+    grid-column: span 1; 
+    grid-row: span 1;
+}
+.item5 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.item6 {
+    grid-column: span 2; 
+    grid-row: span 1;
+}
+
+
+
 }
 
