@@ -1,7 +1,7 @@
 @media only screen and (max-width: 680px) {
     body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fffaf0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: floralwhite;
     line-height: 1.5;
     padding: 10px;
 
@@ -15,7 +15,6 @@ p{
     margin-bottom: 20px;
 }
 
-
 /* CSS FOR NAVIGATION BAR */
 
 ul.navbar {
@@ -23,7 +22,7 @@ ul.navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #e3e3e3;
+    background-color: #557bbb;
 }
 
 li.navbar {
@@ -32,112 +31,59 @@ li.navbar {
 
 ul.navbar a {
     display: block;
-    color: #405d8e;
+    color: white;
     text-align: center;
     padding: 1em 1.5em;
     text-decoration: none;
-    font-weight: bold;
 }
 
-ul.navbar a.active{
-    background-color: #c6c6c6;
-    font-weight: bolder;
-    color: #13274E;
+a.active{
+    background-color: #3F67A6;
 }
 
 ul.navbar a:hover{
-    background-color: rgb(144, 144, 144);
+    background-color: #1f293a;
 }
 
 /* CSS FOR PET 'PORTRAITS' + DETAILS */
 
 img.portrait {
-    border: 10px solid rgb(140, 186, 255);
+    border: 10px solid rgb(237, 225, 208);
     width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
 }
 
 h2.portrait {
-    font-size: 160%;
-    background-color: rgb(140, 186, 255);
-    color: black;
+    font-size: 200%;
+    background-color: bisque;
     width: 60%;
     text-align: center;
-    padding: 8%;
-    margin: 20% auto; 
+    margin: 10px auto; 
 }
 h3.portrait {
     font-size: 200%;
-    background-color: rgb(140, 186, 255);
-    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: bisque;
     width: 60%;
     text-align: center;
-    margin: 5% auto; 
+    margin: 10px auto; 
 }
 h3.likes {
-    font-size: 200%;
-    background-color: rgb(140, 186, 255);
-    color: black;
+    font-size: 2em;
+    background-color: bisque;
     width: 80%;
     text-align: center;
-    margin: 5% auto; 
-    padding: 1%;
+    margin: 10px auto; 
+    padding: 10px;
 }
 
 ul.likes {
-    text-align: left;
-    list-style-position: inside;
-    list-style-type: disc;
-}
-
-.pets-grid{
-display: grid;
-grid-template-columns: repeat(2, 1fr); 
-column-gap: 40px;
-padding: 0.9em;
-justify-items: center; 
-}
-.pets-grid> p{
     text-align: center;
 }
 
-.pets-grid > img {
-    background: 1% solid rgb(140, 186, 255);
-    /* background-color: rgb(140, 186, 255); */
-    width: 100%; 
-    height: auto; 
-    padding: .5em;
-    align-items: center;
-}
-
-.image{
-    grid-column: 1;
-    grid-row: span 3;
-} 
-
-.nametag{
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.description {
-    grid-column: 2; 
-}
-
-.likes{
-    grid-column:1;
-    grid-row: 4;
-}
-
-.likes_list{
-    grid-column:2;
-    grid-row: 4;
-}
-
-.pets-gallery {
+.pets-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     column-gap: 40px;
@@ -146,8 +92,8 @@ justify-items: center;
     justify-items: center; 
 }
 
-.pets-gallery > img {
-    background-color: rgb(140, 186, 255);
+.pets-grid > img {
+    background-color: burlywood;
     width: 100%; 
     height: auto; 
     padding: 1em;
@@ -190,77 +136,36 @@ img.recipes {
 
 h2.recipes {
     font-size: 200%;
-    background-color: #fcf3e1;
+    background-color: bisque;
     width: 60%;
     text-align: center;
-    margin: 4% auto; 
+    margin: 10px auto; 
 }
 h3.recipes {
     font-size: 175%;
-    background-color: #fcf3e1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: bisque;
     width: 60%;
     text-align: center;
-    margin: 4% auto; 
+    margin: 10px auto; 
 }
 ul.recipe_details {
-    text-align: left;
+    text-align: center;
     list-style-position: inside;
 }
 
 ul.recipe_steps {
-    text-align: left;
+    text-align: center;
+    list-style-type: circle;
     list-style-position: inside;
-    list-style-type: disc;
 }
 ol.recipe_steps {
-    text-align: left;
+    text-align: center;
     list-style-type: lower-roman;
     list-style-position: inside;
 }
 
-.recipes-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    column-gap: 10px;
-    row-gap: 10px;
-    padding: 0.9em;
-    justify-items: center; 
-    border: 1px solid white;
-    }
-
-.recipes-grid> p{
-        text-align: center;
-}
-    
-
-    
-    .details{
-        grid-column: 1;
-        grid-row: span 1;
-    } 
-    .description {
-        grid-column: 2; 
-        grid-row: 1;
-    }
-
-    .ingredients_details{
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    
-    .steps{
-        grid-column:1;
-        grid-row: 4;
-    }
-    
-    .steps_list{
-        grid-column:2;
-        grid-row: 4;
-    }
-    
-
-.recipes-gallery {
+.recipes-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     column-gap: 40px;
@@ -269,8 +174,8 @@ ol.recipe_steps {
     justify-items: center; 
 }
 
-.recipes-gallery > img {
-    background-color: #fcf3e1;
+.recipes-grid > img {
+    background-color: burlywood;
     width: 100%; 
     height: auto; 
     padding: 1em;
@@ -307,6 +212,7 @@ h2.travel {
 }
 h3.travel {
     font-size: 120%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: bisque;
     width: 60%;
     text-align: center;
