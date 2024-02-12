@@ -68,7 +68,6 @@ h2.portrait {
 }
 h3.portrait {
     font-size: 200%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #fcf3e1;
     width: 60%;
     text-align: center;
@@ -147,7 +146,6 @@ h2.recipes {
 }
 h3.recipes {
     font-size: 175%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: bisque;
     width: 60%;
     text-align: center;
@@ -179,7 +177,7 @@ ol.recipe_steps {
 }
 
 .recipes-grid > img {
-    border: 2% solid;
+    border: 2% solid bisque;
     width: 100%; 
     height: auto; 
     padding: 1em;
@@ -219,7 +217,6 @@ h2.travel {
 }
 h3.travel {
     font-size: 120%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color:#fcf3e1;
     width: 60%;
     text-align: center;
