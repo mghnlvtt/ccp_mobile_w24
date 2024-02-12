@@ -265,6 +265,6 @@ ul.travel {
 
 @media (prefers-reduced-motion) {
     .animation {
-      animation: dissolve 2s linear infinite both; 
+      animation-duration: 0s;
     }
 }
