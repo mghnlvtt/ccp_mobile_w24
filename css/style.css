@@ -1,7 +1,7 @@
 @media only screen and (max-width: 680px) {
     body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: floralwhite;
+    background-color: #fffaf0;
     line-height: 1.5;
     padding: 10px;
 
@@ -15,6 +15,7 @@ p{
     margin-bottom: 20px;
 }
 
+
 /* CSS FOR NAVIGATION BAR */
 
 ul.navbar {
@@ -22,7 +23,7 @@ ul.navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #405d8e;
+    background-color: #e3e3e3;
 }
 
 li.navbar {
@@ -31,19 +32,21 @@ li.navbar {
 
 ul.navbar a {
     display: block;
-    color: white;
+    color: #405d8e;
     text-align: center;
     padding: 1em 1.5em;
     text-decoration: none;
-}
-
-a.active{
-    background-color: #2c3f60;
     font-weight: bold;
 }
 
+ul.navbar a.active{
+    background-color: #c6c6c6;
+    font-weight: bolder;
+    color: #13274E;
+}
+
 ul.navbar a:hover{
-    background-color: #1f293a;
+    background-color: rgb(144, 144, 144);
 }
 
 /* CSS FOR PET 'PORTRAITS' + DETAILS */
@@ -187,35 +190,77 @@ img.recipes {
 
 h2.recipes {
     font-size: 200%;
-    background-color: bisque;
+    background-color: #fcf3e1;
     width: 60%;
     text-align: center;
-    margin: 10px auto; 
+    margin: 4% auto; 
 }
 h3.recipes {
     font-size: 175%;
-    background-color: bisque;
+    background-color: #fcf3e1;
     width: 60%;
     text-align: center;
-    margin: 10px auto; 
+    margin: 4% auto; 
 }
 ul.recipe_details {
-    text-align: center;
+    text-align: left;
     list-style-position: inside;
 }
 
 ul.recipe_steps {
-    text-align: center;
-    list-style-type: circle;
+    text-align: left;
     list-style-position: inside;
+    list-style-type: disc;
 }
 ol.recipe_steps {
-    text-align: center;
+    text-align: left;
     list-style-type: lower-roman;
     list-style-position: inside;
 }
 
-.recipes-grid {
+.recipes-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 0.9em;
+    justify-items: center; 
+    border: 1px solid white;
+    }
+
+.recipes-grid> p{
+        text-align: center;
+}
+    
+
+    
+    .details{
+        grid-column: 1;
+        grid-row: span 1;
+    } 
+    .description {
+        grid-column: 2; 
+        grid-row: 1;
+    }
+
+    .ingredients_details{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    
+    .steps{
+        grid-column:1;
+        grid-row: 4;
+    }
+    
+    .steps_list{
+        grid-column:2;
+        grid-row: 4;
+    }
+    
+
+.recipes-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     column-gap: 40px;
@@ -224,8 +269,8 @@ ol.recipe_steps {
     justify-items: center; 
 }
 
-.recipes-grid > img {
-    background-color: burlywood;
+.recipes-gallery > img {
+    background-color: #fcf3e1;
     width: 100%; 
     height: auto; 
     padding: 1em;
