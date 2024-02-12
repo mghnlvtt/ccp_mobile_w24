@@ -177,7 +177,7 @@ ol.recipe_steps {
 }
 
 .recipes-grid > img {
-    border: 2% solid bisque;
+    border: 2px solid bisque;
     width: 100%; 
     height: auto; 
     padding: 1em;
@@ -236,7 +236,6 @@ ul.travel {
 }
 
 .travel-main-grid > img {
-    /* background-color: burlywood; */
     width: 100%; 
     height: auto; 
     padding: 1em;
