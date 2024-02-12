@@ -22,7 +22,7 @@ ul.navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #577fc4;
+    background-color: #405d8e;
 }
 
 li.navbar {
@@ -38,7 +38,7 @@ ul.navbar a {
 }
 
 a.active{
-    background-color: #405d8e;
+    background-color: #2c3f60;
     font-weight: bold;
 }
 
